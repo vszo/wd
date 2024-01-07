@@ -1,161 +1,322 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Loading - GI</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">		
-		<style type="text/css">
-			#loading{
-			    background-color: #fc6a42;
-			    height: 100%;
-			    width: 100%;
-			    position: absolute;
-			    z-index: 1;
-			    margin-top: 0px;
-			    top: 0px;
-			    left:0;
-			    z-index: 9999;
-			}
-			#loading-center{
-			    width: 100%;
-			    height: 100%;
-			    position: relative;
-			}
-			#loading-center-absolute {
-			    position: absolute;
-			    left: 50%;
-			    top: 50%;
-			    height: 50px;
-			    width: 50px;
-			    margin-top: -25px;
-			    margin-left: -25px;
-			    -ms-transform: rotate(45deg); 
-			    -webkit-transform: rotate(45deg);
-			    transform: rotate(45deg); 
-			    -webkit-animation: loading-center-absolute 1.5s infinite;
-			    animation: loading-center-absolute 1.5s infinite;
-			
-			}
-			.object{
-			    width: 25px;
-			    height: 25px;
-			    background-color: #FFF;
-			    float: left;
-			
-			}
-			
-			
-			#object_one {
-			    -webkit-animation: object_one 1.5s infinite;
-			    animation: object_one 1.5s infinite;
-			}
-			#object_two {
-			    -webkit-animation: object_two 1.5s infinite;
-			    animation: object_two 1.5s infinite;
-			}
-			#object_three {
-			    -webkit-animation: object_three 1.5s infinite;
-			    animation: object_three 1.5s infinite;
-			}
-			#object_four {
-			    -webkit-animation: object_four 1.5s infinite;
-			    animation: object_four 1.5s infinite;
-			}
-			
-			
-			@-webkit-keyframes loading-center-absolute {
-			    100% { -webkit-transform: rotate(-45deg); }
-			
-			}
-			
-			@keyframes loading-center-absolute {
-			    100% { 
-			        transform:  rotate(-45deg);
-			        -webkit-transform:  rotate(-45deg);
-			    }
-			}
-			
-			
-			
-			@-webkit-keyframes object_one {
-			    25% { -webkit-transform: translate(0,-50px) rotate(-180deg); }
-			    100% { -webkit-transform: translate(0,0) rotate(-180deg); }
-			
-			}
-			
-			@keyframes object_one {
-			    25% { 
-			        transform: translate(0,-50px) rotate(-180deg);
-			        -webkit-transform: translate(0,-50px) rotate(-180deg);
-			    } 
-			    100% { 
-			        transform: translate(0,0) rotate(-180deg);
-			        -webkit-transform: translate(0,0) rotate(-180deg);
-			    }
-			}
-			
-			
-			@-webkit-keyframes object_two {
-			    25% { -webkit-transform: translate(50px,0) rotate(-180deg); }
-			    100% { -webkit-transform: translate(0,0) rotate(-180deg); }
-			}
-			
-			@keyframes object_two {
-			    25% { 
-			        transform: translate(50px,0) rotate(-180deg);
-			        -webkit-transform: translate(50px,0) rotate(-180deg);
-			    } 
-			    100% { 
-			        transform: translate(0,0) rotate(-180deg);
-			        -webkit-transform: translate(0,0) rotate(-180deg);
-			    }
-			}
-			
-			@-webkit-keyframes object_three {
-			    25% { -webkit-transform: translate(-50px,0) rotate(-180deg); }
-			    100% { -webkit-transform: translate(0,0) rotate(-180deg); }
-			}
-			
-			@keyframes object_three {
-			    25% { 
-			        transform:  translate(-50px,0) rotate(-180deg);
-			        -webkit-transform:  translate(-50px,0) rotate(-180deg);
-			    } 
-			    100% { 
-			        transform: translate(0,0) rotate(-180deg);
-			        -webkit-transform: rtranslate(0,0) rotate(-180deg);
-			    }
-			}
-			
-			
-			@-webkit-keyframes object_four {
-			    25% { -webkit-transform: translate(0,50px) rotate(-180deg); }
-			    100% { -webkit-transform: translate(0,0) rotate(-180deg); }
-			}
-			
-			@keyframes object_four {
-			    25% { 
-			        transform: translate(0,50px) rotate(-180deg); 
-			        -webkit-transform: translate(0,50px) rotate(-180deg);  
-			    } 
-			    100% { 
-			        transform: translate(0,0) rotate(-180deg);
-			        -webkit-transform: translate(0,0) rotate(-180deg);
-			    }
-			}
-		</style>
-    </head>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>简历 | 王梦兰</title>
+<link href="https://zngo.gitee.io/css/main.css" rel="stylesheet"></head>
+<body>
+<main class="content">
 
-    <body>
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="object" id="object_one"></div>
-                    <div class="object" id="object_two"></div>
-                    <div class="object" id="object_three"></div>
-                    <div class="object" id="object_four"></div>
-                </div>
+  <!--基本信息-->
+  <header class="content-hd">
+    <section class="title">
+      <div class="name">
+        <h1> 王梦兰 </h1>
+      </div>
+      <div class="job">
+        <h2>前端开发工程师</h2>
+      </div>
+    </section>
+    <section class="info">
+      <ul>
+        <li>女 / 1994.05.23</li>
+        <li>武汉职业技术学院</li>
+        <li>大专 / 2016年毕业</li>
+        <li>工作经验:三年</li>
+      </ul>
+    </section>
+    <section class="contact">
+      <ul>
+        <li>
+          <a href="">
+            <span class="contact-link">我的技术博客</span>
+            <span class="iconfont">
+              <svg width="16px" height="16px" viewBox="0 0 1024 1024">
+              <path d="M512 42.581333l-469.333333 469.333333 31.146667 31.146667L170.666667 446.250667l0 438.186667 682.666667 0L853.333333 446.208l96.853333 96.896 31.146667-31.146667L512 42.581333zM426.666667 841.770667l0-298.666667 170.666667 0 0 298.666667L426.666667 841.770667zM810.666667 841.770667l-170.666667 0 0-341.333333L384 500.437333l0 341.333333L213.333333 841.770667 213.333333 403.584l298.666667-298.666667 298.666667 298.666667L810.666667 841.770667z"></path>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="contact-link">Github - wangmenglan</span>
+            <span class="iconfont">
+              <svg width="16px" height="16px" viewBox="0 0 1024 1024">
+                <path d="M941.714 512q0 143.433-83.712 258.011t-216.283 158.574q-15.433 2.853-22.565-3.986t-7.131-17.152v-120.576q0-55.442-29.696-81.152 32.585-3.438 58.587-10.277t53.723-22.272 46.299-37.998 30.281-60.014 11.703-86.016q0-69.157-45.129-117.723 21.138-52.005-4.571-116.553-16.018-5.157-46.299 6.29t-52.553 25.161l-21.723 13.714q-53.138-14.848-109.714-14.848t-109.714 14.848q-9.143-6.29-24.283-15.433t-47.726-22.016-49.152-7.717q-25.161 64.585-3.986 116.553-45.129 48.567-45.129 117.723 0 48.567 11.703 85.723t29.989 60.014 46.007 38.29 53.723 22.272 58.587 10.277q-22.857 20.553-28.014 58.843-11.995 5.705-25.71 8.558t-32.585 2.853-37.413-12.288-31.707-35.73q-10.862-18.286-27.721-29.696t-28.27-13.714l-11.447-1.719q-11.995 0-16.567 2.56t-2.853 6.583 5.157 8.009 7.424 6.839l3.986 2.853q12.581 5.705 24.869 21.723t17.993 29.147l5.705 13.129q7.424 21.723 25.161 35.145t38.29 17.152 39.717 3.986 31.707-2.011l13.129-2.304q0 21.723 0.293 50.871t0.293 30.866q0 10.277-7.424 17.152t-22.857 3.986q-132.571-43.995-216.283-158.574t-83.712-258.011q0-119.442 58.843-220.27t159.707-159.707 220.27-58.843 220.27 58.843 159.707 159.707 58.843 220.27z"></path>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:queenDream2014@163.com">
+            <span class="contact-link">queenDream2014@163.com</span>
+            <span class="iconfont">
+              <svg width="16px" height="16px" viewBox="0 0 1024 1024">
+                <path d="M903.808 239.04l-818.304 0 0 545.92 852.992 0 0-545.92-34.688 0zM869.664 273.152l-329.536 329.536c-15.04 15.04-41.248 15.04-56.288 0l-329.6-329.536 715.392 0zM119.616 286.752l221.536 221.504-221.536 221.536 0-443.072zM146.848 750.848l218.464-218.432 94.432 94.4c13.952 13.952 32.512 21.664 52.256 21.664s38.304-7.712 52.256-21.664l94.432-94.432 218.432 218.432-730.304 0zM904.384 729.824l-221.536-221.568 221.536-221.568 0 443.136z"></path>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="tel:15827152077">
+            <span class="contact-link">15827152077</span>
+            <span class="iconfont">
+              <svg width="16px" height="16px" viewBox="0 0 1024 1024">
+                <path d="M256 1024l512 0c26.464 0 48-21.536 48-48l0-928c0-26.464-21.536-48-48-48l-512 0c-26.464 0-48 21.536-48 48l0 928c0 26.464 21.536 48 48 48zM240 48c0-8.832 7.168-16 16-16l512 0c8.832 0 16 7.168 16 16l0 928c0 8.832-7.168 16-16 16l-512 0c-8.832 0-16-7.168-16-16l0-928zM288 864l448 0c8.832 0 16-7.168 16-16l0-672c0-8.832-7.168-16-16-16l-448 0c-8.832 0-16 7.168-16 16l0 672c0 8.832 7.168 16 16 16zM304 192l416 0 0 640-416 0 0-640zM496 928c0 17.664 14.336 32 32 32s32-14.336 32-32c0-17.664-14.336-32-32-32-17.664 0-32 14.336-32 32zM448 128l128 0c8.832 0 16-7.168 16-16s-7.168-16-16-16l-128 0c-8.832 0-16 7.168-16 16s7.168 16 16 16z"></path>
+              </svg>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </header>
+
+  <div class="content-bd">
+
+    <div class="content-left">
+      <section class="practice">
+        <header class="section-hd">
+          <span class="section-title-l"></span>
+          <h2 class="section-title">经历</h2>
+          <span class="section-title-r"></span>
+        </header>
+        <div class="section-bd">
+          <!--经历:工作-->
+          <div class="item">
+            <header class="item-hd">
+              <h3 class="item-name">杭州优海信息系统有限公司</h3>
+              <span class="item-time">2019.06 - 2020.10</span>
+              <span class="btn item-more">工业管理系统</span>
+            </header>
+            <div class="item-bd">
+              <p class="item-des">简介: e优优”是一款部署在优海云工业互联网平台上的——基于TOC及JIT、TQM等精益管理理论，适用于中小微型企业应用的工业APP。公司承建的数字化工厂项目被评为杭州市工厂物联网和工业互联网示范样板项目</p>
             </div>
+          </div>
+          <div class="item">
+            <header class="item-hd">
+              <h3 class="item-name">上海汉德信息技术有限公司（外包）</h3>
+              <span class="item-time">2017.09 - 2019.06</span>
+              <span class="btn item-more">管理系统,O2C</span>
+            </header>
+            <div class="item-bd">
+              <p class="item-des">简介: 从事信息系统和数据管理系统的安装以及信息系统的集成，提供技术开发</p>
+            </div>
+          </div>
         </div>
-    </body>
+      </section>
+
+      <section class="project">
+        <header class="section-hd">
+          <span class="section-title-l"></span>
+          <h2 class="section-title">项目</h2>
+          <span class="section-title-r"></span>
+        </header>
+        <div class="section-bd">
+          <!--项目:优海信息 “e优优”系统-->
+          <div class="item">
+            <header class="item-hd">
+              “e优优”工业管理系统
+              <a class="btn item-more" href="">PC-业务前中后台</a>
+            </header>
+            <div class="item-des">
+              项目简介：e优优”是一款部署在优海云工业互联网平台上的——基于TOC及JIT、TQM等精益管理理论，将优海信息20多年的软件技术封装成适用于中小微型企业应用的工业APP。“e优优”是通过不断追求在制品的“快速流动、均衡生产、产能满负荷、质量可追溯性”，达到提高生产效率的目的。
+            </div>
+            <div class="item-bd">
+              负责模块：登录、注册、搜索框、地图，日历，人员档案，设备档案，产品工艺，配置，计划分解;
+            </div>
+            <div class="item-bd">
+              <ul>
+                <li>
+                  使用echarts配置地图，可以看到每个省市的公司分布情况；
+                </li>
+                <li>
+                  由优优系统到数字工厂系统，做传参处理，保持同步登录，并获得登录的用户信息；
+                </li>
+                <li>
+                  工艺方案预览类似于思维导图的树结构页面，这里用了dom递归调用的做法；
+                </li>
+                <li>
+                  工艺使用页面递归方式实现鱼骨图的画法；
+                </li>
+                
+                <li>
+                  计划分解使用甘特图实现计划分解和下达。
+                </li>
+                
+                <li>
+                  优化项目体积及响应速度；
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--项目:优海云数字工厂管理系统-->
+          <div class="item">
+            <header class="item-hd">
+              数字工厂管理系统
+              <a class="btn item-more" href="">PC-业务前中后台</a>
+            </header>
+            <div class="item-des">
+              项目简介：该系统适用于生产、质量、设备、工艺、运营中心等部门的中高级管理人员及运营人员，具有设备状态监控、生产任务执行、维修任务执行、生产异常响应、质检任务执行等功能，提供各类生产制造过程数据分析结果的查看功能，随时随地掌控工厂的人、机、料、法、环、测等各类生产要素的实时数据及汇总数据，助力生产作业的远程监测与调度。
+            </div>
+            <div class="item-bd">
+              负责模块：登录、注册、搜索框、产品目录、工艺曲线，设备类，监控类，产品类；
+            </div>
+            <div class="item-bd">
+              <ul>
+                <li>
+                  根据UI给定的设计图使用html5+css3进行页面的布局；
+                </li>
+                <li>
+                  使用iview组件库实现快速布局；
+                </li>
+                <li>
+                  Axios联调接口实现数据的增删改查功能；
+                </li>
+                
+                <li>
+                  使用Echarts搭建多种形式的生产线流程监控图表；
+                </li>
+                
+                <li>
+                  ‘合达版本、强光剑版本、鸿运版本通过权限区分，实现相同功能下展现不一样的页’
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--项目:东方童画pandaSystem-->
+          <div class="item">
+            <header class="item-hd">
+              东方童画pandaSystem
+              <a class="btn item-more" href="">后台管理</a>
+            </header>
+            <div class="item-des">
+              项目简介：熊猫是一款对于小学生绘画培训，为加盟校提供生源登记，学生报名，缴费，排班，考勤，各种报表的导入，导出等功能的后台管理系统；主要模块有用户管理，学员管理，课程管理，学员回访管理。
+            </div>
+            <div class="item-bd">
+              主要负责：用户管理，学员管理，课程管理；
+            </div>
+            <div class="item-bd">
+              <ul>
+                <li>使用 webpack管理和打包项目；</li>
+                <li>使用MVVM设计模式进行项目之间的增删改查；</li>
+                <li>修改面包屑，实现组件间跳转进行渲染，点击当前组件进行路由跳转；</li>
+                <li>使用 vue-router＋vuex 页面跳转，参数传递与全局状态的管理；</li>
+                <li>技术使用 vue ＋ vue-cli ＋ vue-router ＋vuex ＋ axios；</li>
+                <li>使用的用具和库：Element-UI</li>
+                <li>使用git分布式版本控制系统进行版本控制管理。</li>
+              </ul>
+            </div>
+          </div>
+          <!--玩途旅行-->
+          <div class="item">
+            <header class="item-hd">
+              玩途旅行
+              <a class="btn item-more" href="">O2C</a>
+            </header>
+            <div class="item-des">
+              要出发周边游家庭周末旅行攻略为您提供全国各地的最热门2018年旅游攻略,周边游攻略,自助游攻略,自驾攻略,游记攻略,还有景区景点介绍以及吃、喝、玩、乐的真实经历等周边旅游相关信息,为您出行提供帮助。
+            </div>
+            <div class="item-bd">
+              负责模块：首页、登录、注册、搜索框、产品列表、订单列表
+            </div>
+            <div class="item-bd">
+              <ul>
+                <li>使用Bootstrap、flex弹性布局完成首页和商品列表以及商品详情页的还原设计;</li>
+                <li>使用ELEMENT-UI完成首页和子页面的轮播功能，并抽取为公共子组件来进行代码优化;</li>
+                <li>使用基于Vue.js的photoswipe组件完成缩略图的点击放大和轮播的特效；</li>
+                <li>使用Vue-router，实现嵌套页面的跳转以及父子组件和非父子组件之间的通信；</li>
+                <li>使用Localstorage存储，负责完成个人中心及购物车功能；</li>
+                <li>使用编程式导航完成页面的返回功能，提高用户的体验；</li>
+              </ul>
+            </div>
+          </div>
+          <!--特好商城-->
+          <div class="item">
+            <header class="item-hd">
+              特好商城
+              <a class="btn item-more" href="">O2C</a>
+            </header>
+            <div class="item-des">
+              特好商城是一个大型综合性网上购物网站,以好而不贵受到广大客户的青睐。
+            </div>
+            <div class="item-bd">
+              负责模块：搜索、首页，详情、抢购
+            </div>
+            <div class="item-bd">
+              <ul>
+                <li>利用html、css还原设计图;</li>
+                <li>用JS和Bootstrap完成网站页面的布局及特效；</li>
+                <li>使用CSS3阴影（box-shadow）实现元素阴影特效；</li>
+                <li>配合后台开发人员，使用Ajax实现数据渲染；</li>
+              </ul>
+            </div>
+          </div>
+          <!--小汤山蔬菜网上商城-->
+          <div class="item">
+            <header class="item-hd">
+              小汤山蔬菜网上商城
+              <a class="btn item-more" href="">O2C</a>
+            </header>
+            <div class="item-des">
+              是一款pc端农产品电商网站，包括页面登录，当季新鲜食材上架，品质保障，选购指南，我食我秀等模块，可以实现食品查看，选购，加入购物车，购买，订单查询等功能。
+            </div>
+            <div class="item-bd">
+              负责模块：首页、登录、注册、搜索框、详情，购物车模块
+            </div>
+            <div class="item-bd">
+              <ul>
+                <li>使用 webpack＋git 管理打包项目；</li>
+                <li>修改面包屑，实现组件间跳转进行渲染，点击当前组件进行路由跳转;</li>
+                <li>使用 vue-router＋vuex 页面跳转，参数传递与全局状态的管理；</li>
+                <li>技术使用 vue ＋ vue-cli ＋ vue-router ＋vuex ＋ axios；</li>
+                <li>使用的用具和库：Element-UI;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <div class="content-right">
+      <section class="skill">
+        <header class="section-hd">
+          <span class="section-title-l"></span>
+          <h2 class="section-title">优势</h2>
+          <span class="section-title-r"></span>
+        </header>
+        <div class="section-bd">
+          <!--优势-->
+          <div class="item">
+            <header class="item-hd">
+              <span class="item-time">为什么选择我</span>
+            </header>
+            <div class="item-bd">
+              <ul class="section-content">
+                <li>技术方向：熟练掌握HTML、CSS、Javascript等前端技术，原生小程序开发经验，移动端浏览器端开发经验，能快速写出符合 W3C 标准</li>
+                <li>业务方向：h5(移动端)，小程序，PC端前中后台，有较为丰富的跨终端开发经验，熟练掌握主流的UI框架(PC/Mobile),擅长PC端项目；</li>
+                <li>业务方向增值上：熟练使用echarts,canvas，甘特图 绘图插件,了解gojs绘制鱼骨图；</li>
+                <li>工作态度方面：做事有规划，具备清晰的思路、合理的做事方式和处理问题的方法，较强的动手能力；</li>
+                <li>协作方面：和团队有良好的沟通能力、协调能力和团队合作能力</li>
+                <li>生活方面：喜欢看书，比较宅，喜欢尝试新的事情</li>
+                <li>性格方面：性格内向，为人稳重，待人热情真诚，做事一丝不苟</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-flooter">
+          <section>
+            <p style="font-size: 16px; font-weight: 500;">
+              致谢：感谢贵司阅读我的简历，希望有机会贡献自己的力量！
+            </p>
+          </section>
+
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+</body>
 </html>
