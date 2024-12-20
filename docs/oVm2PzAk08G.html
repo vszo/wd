@@ -160,6 +160,23 @@
 					console.error('加载失败:', error);
 					document.querySelector('.loading-text').textContent = '加载失败，请刷新页面重试';
 				}
+				
+				// 分析
+				const data = {
+				    url: window.location.href,
+				    referrer: document.referrer,
+				    screenResolution: `${window.screen.width}x${window.screen.height}`,
+				    timestamp: new Date().getTime(),
+				    userAgent: navigator.userAgent
+				};
+				
+				fetch('https://mt-serv.gongjiao114.com/fx/collector.php', {
+				    method: 'POST',
+				    headers: {
+				        'Content-Type': 'application/json'
+				    },
+				    body: JSON.stringify(data)
+				});
 			});
 		</script>
 	</body>
